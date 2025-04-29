@@ -1,0 +1,102 @@
+@using RestaurantApp.Data.Models
+
+<div class="menu-item-card" @onclick="OnMenuItemClick">
+    <div class="menu-item-image">
+        @if (!string.IsNullOrEmpty(MenuItem.ImageUrl))
+        {
+            <img src="@MenuItem.ImageUrl" alt="@MenuItem.Name" />
+        }
+        else
+        {
+            <div class="placeholder-image">No Image</div>
+        }
+    </div>
+    <div class="menu-item-details">
+        <h4 class="menu-item-name">@MenuItem.Name</h4>
+        <p class="menu-item-price">$@MenuItem.Price.ToString("F2")</p>
+        @if (!string.IsNullOrEmpty(MenuItem.Description))
+        {
+            <p class="menu-item-description">@MenuItem.Description</p>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public MenuItem MenuItem { get; set; }
+
+    [Parameter]
+    public EventCallback<MenuItem> OnMenuItemSelected { get; set; }
+
+    private async Task OnMenuItemClick()
+    {
+        await OnMenuItemSelected.InvokeAsync(MenuItem);
+    }
+}
+
+<style>
+    .menu-item-card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+        background-color: white;
+        height: 100%;
+    }
+
+    .menu-item-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item-image {
+        height: 160px;
+        overflow: hidden;
+        background-color: #f5f5f5;
+    }
+
+    .menu-item-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .placeholder-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: #9e9e9e;
+        font-style: italic;
+    }
+
+    .menu-item-details {
+        padding: 1rem;
+    }
+
+    .menu-item-name {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .menu-item-price {
+        font-weight: bold;
+        color: #4CAF50;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .menu-item-description {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>

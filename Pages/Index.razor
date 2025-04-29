@@ -1,0 +1,173 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager NavigationManager
+
+<div class="restaurant-container">
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="restaurant-name">Gourmet Delight</h1>
+            <p class="restaurant-tagline">Where Every Bite Tells a Story</p>
+        </div>
+    </div>
+
+    <div class="access-cards">
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="access-card admin-card" @onclick="@(() => NavigateToRole("Admin"))">
+                    <div class="card-icon">
+                        <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <h3>Admin Panel</h3>
+                    <p>Manage menu, settings, and system configuration</p>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="access-card waiter-card" @onclick="@(() => NavigateToRole("Waiter"))">
+                    <div class="card-icon">
+                        <i class="bi bi-cup-hot"></i>
+                    </div>
+                    <h3>Order Taking</h3>
+                    <p>Take orders and manage table service</p>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="access-card kitchen-card" @onclick="@(() => NavigateToRole("Kitchen"))">
+                    <div class="card-icon">
+                        <i class="bi bi-egg-fried"></i>
+                    </div>
+                    <h3>Kitchen</h3>
+                    <p>View and prepare orders</p>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="access-card cashier-card" @onclick="@(() => NavigateToRole("Cashier"))">
+                    <div class="card-icon">
+                        <i class="bi bi-cash-stack"></i>
+                    </div>
+                    <h3>Cashier</h3>
+                    <p>Process payments and manage bills</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .restaurant-container {
+        min-height: 100vh;
+        background-color: #f8f9fa;
+    }
+
+    .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/restaurant-hero.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        margin-bottom: 3rem;
+    }
+
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .restaurant-name {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .restaurant-tagline {
+        font-size: 1.5rem;
+        font-style: italic;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .access-cards {
+        padding: 2rem;
+    }
+
+    .access-card {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .access-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-icon {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .admin-card .card-icon {
+        color: #6c5ce7;
+    }
+
+    .waiter-card .card-icon {
+        color: #00b894;
+    }
+
+    .kitchen-card .card-icon {
+        color: #e17055;
+    }
+
+    .cashier-card .card-icon {
+        color: #0984e3;
+    }
+
+    .access-card h3 {
+        margin-bottom: 1rem;
+        color: #2d3436;
+    }
+
+    .access-card p {
+        color: #636e72;
+        margin-bottom: 0;
+    }
+</style>
+
+@code {
+    private async Task NavigateToRole(string role)
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true && user.IsInRole(role))
+        {
+            var path = role switch
+            {
+                "Admin" => "/admin/dashboard",
+                "Waiter" => "/tables",
+                "Kitchen" => "/kitchen",
+                "Cashier" => "/cashier",
+                _ => "/"
+            };
+            NavigationManager.NavigateTo(path);
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/login");
+        }
+    }
+}

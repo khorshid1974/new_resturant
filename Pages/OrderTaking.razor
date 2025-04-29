@@ -1,0 +1,251 @@
+@page "/order-taking"
+@using RestaurantApp.Data.Models
+@using RestaurantApp.Data.Services
+@using RestaurantApp.Data.ViewModels
+@inject IOrderService OrderService
+@inject IMenuService MenuService
+@inject ITableService TableService
+@inject ILogger<OrderTaking> Logger
+@attribute [Authorize(Roles = "Waiter")]
+<div class="container mt-4">
+    <h2>Take New Order</h2>
+
+    <div class="row">
+        <!-- Table Selection -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Select Table</h5>
+                </div>
+                <div class="card-body">
+                    <select class="form-select" @bind="viewModel.SelectedTableId">
+                        <option value="0">-- Select Table --</option>
+                        @foreach (var table in tables)
+                        {
+                            <option value="@table.Id">@table.Name (Capacity: @table.Capacity)</option>
+                        }
+                    </select>
+                    <button class="btn btn-primary mt-2" @onclick="StartNewOrder" disabled="@(viewModel.SelectedTableId == 0)">
+                        Start New Order
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Menu Items</h5>
+                </div>
+                <div class="card-body">
+                    @if (viewModel.AvailableMenuItems.Any())
+                    {
+                        <div class="list-group">
+                            @foreach (var item in viewModel.AvailableMenuItems)
+                            {
+                                <div class="list-group-item">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="mb-1">@item.Name</h6>
+                                            <small>@item.Description</small>
+                                            <br>
+                                            <small class="text-muted">$@item.Price.ToString("F2")</small>
+                                        </div>
+                                        <div class="input-group" style="width: 120px;">
+                                            <button class="btn btn-outline-secondary" @onclick="() => UpdateQuantity(item.Id, -1)">-</button>
+                                            <input type="number" class="form-control text-center" 
+                                                   value="@GetItemQuantity(item.Id)"
+                                                   @onchange="@((ChangeEventArgs e) => SetItemQuantity(item.Id, e))" 
+                                                   min="0" />
+                                            <button class="btn btn-outline-secondary" @onclick="() => UpdateQuantity(item.Id, 1)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>No menu items available</p>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Order Summary</h5>
+                </div>
+                <div class="card-body">
+                    @if (viewModel.CurrentOrder != null)
+                    {
+                        <div class="mb-3">
+                            <label class="form-label">Special Instructions</label>
+                            <textarea class="form-control" @bind="viewModel.SpecialInstructions" rows="3"></textarea>
+                        </div>
+
+                        <div class="list-group mb-3">
+                            @foreach (var item in viewModel.AvailableMenuItems.Where(i => GetItemQuantity(i.Id) > 0))
+                            {
+                                <div class="list-group-item">
+                                    <div class="d-flex justify-content-between">
+                                        <span>@item.Name x @GetItemQuantity(item.Id)</span>
+                                        <span>$@((item.Price * GetItemQuantity(item.Id)).ToString("F2"))</span>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <strong>Total:</strong>
+                            <span>$@viewModel.CalculateCurrentTotal().ToString("F2")</span>
+                        </div>
+
+                        <button class="btn btn-success w-100" @onclick="SubmitOrder">
+                            Submit Order
+                        </button>
+                    }
+                    else
+                    {
+                        <p>Select a table and start a new order</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private OrderTakingViewModel viewModel = new();
+    private List<Table> tables = new();
+    private List<MenuItem> menuItems = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadTables();
+        await LoadMenuItems();
+    }
+
+    private async Task LoadTables()
+    {
+        tables = (await TableService.GetAllTablesAsync()).ToList();
+    }
+
+    private async Task LoadMenuItems()
+    {
+        menuItems = (await MenuService.GetAllMenuItemsAsync()).ToList();
+        viewModel.AvailableMenuItems = menuItems;
+    }
+
+    private async Task StartNewOrder()
+    {
+        if (viewModel.SelectedTableId == 0) return;
+
+        try
+        {
+            // Create the order
+            viewModel.CurrentOrder = await OrderService.CreateOrderAsync(viewModel.SelectedTableId);
+            
+            // Update table status to occupied
+            await TableService.UpdateTableStatusAsync(viewModel.SelectedTableId, true);
+            
+            // Reset the form
+            viewModel.SelectedItems.Clear();
+            viewModel.SpecialInstructions = string.Empty;
+
+            Logger.LogInformation($"Started new order {viewModel.CurrentOrder.Id} for table {viewModel.SelectedTableId}");
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error starting new order");
+            // You might want to show an error message to the user here
+        }
+    }
+
+    private int GetItemQuantity(int menuItemId)
+    {
+        return viewModel.SelectedItems.TryGetValue(menuItemId, out var quantity) ? quantity : 0;
+    }
+
+    private void SetItemQuantity(int menuItemId, ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value?.ToString(), out var quantity))
+        {
+            viewModel.SelectedItems[menuItemId] = Math.Max(0, quantity);
+        }
+    }
+
+    private void UpdateQuantity(int menuItemId, int change)
+    {
+        if (!viewModel.SelectedItems.ContainsKey(menuItemId))
+        {
+            viewModel.SelectedItems[menuItemId] = 0;
+        }
+
+        var newQuantity = viewModel.SelectedItems[menuItemId] + change;
+        viewModel.SelectedItems[menuItemId] = Math.Max(0, newQuantity);
+        
+        // Update the order total in the database if we have an active order
+        if (viewModel.CurrentOrder != null)
+        {
+            _ = UpdateOrderTotalAsync();
+        }
+    }
+
+    private async Task UpdateOrderTotalAsync()
+    {
+        if (viewModel.CurrentOrder == null) return;
+
+        try
+        {
+            var total = viewModel.CalculateCurrentTotal();
+            viewModel.CurrentOrder.TotalAmount = total;
+            await OrderService.UpdateOrderTotalAsync(viewModel.CurrentOrder.Id, total);
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error updating order total");
+        }
+    }
+
+    private async Task SubmitOrder()
+    {
+        if (viewModel.CurrentOrder == null) return;
+
+        try
+        {
+            var itemsToAdd = viewModel.SelectedItems.Where(x => x.Value > 0).ToList();
+            if (!itemsToAdd.Any())
+            {
+                Logger.LogWarning("Attempted to submit order with no items");
+                return;
+            }
+
+            foreach (var item in itemsToAdd)
+            {
+                await OrderService.AddItemToOrderAsync(
+                    viewModel.CurrentOrder.Id,
+                    item.Key,
+                    item.Value,
+                    viewModel.SpecialInstructions
+                );
+                Logger.LogInformation($"Added item {item.Key} with quantity {item.Value} to order {viewModel.CurrentOrder.Id}");
+            }
+
+            // Reset the form
+            viewModel = new OrderTakingViewModel();
+            viewModel.AvailableMenuItems= new List<MenuItem>();
+            viewModel.AvailableMenuItems = menuItems;
+
+           // Logger.LogInformation($"Successfully submitted order {viewModel.CurrentOrder.Id}");
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error submitting order");
+            // You might want to show an error message to the user here
+        }
+    }
+} 

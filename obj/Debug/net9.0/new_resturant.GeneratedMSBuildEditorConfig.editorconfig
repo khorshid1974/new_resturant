@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = new_resturant
+build_property.RootNamespace = new_resturant
+build_property.ProjectDir = /Users/khorshidhamza/new_resturant/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/khorshidhamza/new_resturant
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/khorshidhamza/new_resturant/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/Admin/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4vRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/Admin/MenuManager.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4vTWVudU1hbmFnZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/Admin/Reports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4vUmVwb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/Cashier.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2FzaGllci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/KitchenView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvS2l0Y2hlblZpZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9nb3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/OrderTaking.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJUYWtpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/TableLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGFibGVMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/Tables/TableOrderTaking.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGFibGVzL1RhYmxlT3JkZXJUYWtpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/Tables/TableOverview.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGFibGVzL1RhYmxlT3ZlcnZpZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Shared/AdminLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0FkbWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Shared/CashierLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0Nhc2hpZXJMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Shared/Components/MenuItemCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NvbXBvbmVudHMvTWVudUl0ZW1DYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Shared/Components/OrderSummaryPanel.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NvbXBvbmVudHMvT3JkZXJTdW1tYXJ5UGFuZWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Shared/Components/TableCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NvbXBvbmVudHMvVGFibGVDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Shared/KitchenLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0tpdGNoZW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vd0zivsvv9
+
+[/Users/khorshidhamza/new_resturant/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-iox90mqaia
+
+[/Users/khorshidhamza/new_resturant/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/khorshidhamza/new_resturant/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

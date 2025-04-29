@@ -1,0 +1,319 @@
+@page "/Tables/TableOrderTaking/{TableId:int}"
+@using RestaurantApp.Data.Models
+@using RestaurantApp.Data.Services
+@using Microsoft.AspNetCore.Authorization
+@inject ITableService TableService
+@inject IMenuService MenuService
+@inject IOrderService OrderService
+@inject NavigationManager NavigationManager
+@inject ILogger<TableOrderTaking> Logger
+@attribute [Authorize(Roles = "Admin,Staff,Waiter")]
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12 mb-3">
+            <h2>Table @TableName - Order Taking</h2>
+            <button class="btn btn-secondary" @onclick="NavigateBack">Back to Tables</button>
+        </div>
+    </div>
+
+    @if (loading)
+    {
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <!-- Menu Items Grid -->
+            <div class="col-md-8">
+                <div class="menu-categories mb-3">
+                    <button class="btn @(selectedCategory == null ? "btn-primary" : "btn-outline-primary") me-2 mb-2" @onclick="() => FilterByCategory(null)">All</button>
+                    @foreach (var category in categories)
+                    {
+                        <button class="btn @(selectedCategory == category ? "btn-primary" : "btn-outline-primary") me-2 mb-2" @onclick="() => FilterByCategory(category)">
+                            @category
+                        </button>
+                    }
+                </div>
+
+                <div class="menu-items-grid">
+                    @foreach (var menuItem in filteredMenuItems)
+                    {
+                        <div class="menu-item-grid-item">
+                            <MenuItemCard MenuItem="@menuItem" OnMenuItemSelected="AddItemToOrder" />
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Order Summary Panel -->
+            <div class="col-md-4">
+                <OrderSummaryPanel 
+                    OrderItems="selectedItems" 
+                    TotalAmount="CalculateTotal()" 
+                    OnOrderConfirmed="ConfirmOrder"
+                    OnItemQuantityIncreased="IncreaseItemQuantity"
+                    OnItemQuantityDecreased="DecreaseItemQuantity"
+                    OnItemRemoved="RemoveOrderItem" />
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int TableId { get; set; }
+
+    private Table table;
+    private string TableName => table?.Name ?? TableId.ToString();
+    private List<MenuItem> menuItems = new List<MenuItem>();
+    private List<string> categories = new List<string>();
+    private string? selectedCategory;
+    private List<OrderItem> selectedItems = new List<OrderItem>();
+    private Order? currentOrder;
+    private bool loading = true;
+
+    private IEnumerable<MenuItem> filteredMenuItems => selectedCategory == null 
+        ? menuItems.Where(m => m.IsAvailable)
+        : menuItems.Where(m => m.IsAvailable && m.Category == selectedCategory);
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        try
+        {
+            loading = true;
+            
+            // Load table information
+            table = await TableService.GetTableByIdAsync(TableId);
+            if (table == null)
+            {
+                Logger.LogWarning($"Table with ID {TableId} not found");
+                NavigationManager.NavigateTo("/Tables/TableOverview");
+                return;
+            }
+
+            // Load menu items
+            menuItems = (await MenuService.GetAllMenuItemsAsync()).ToList();
+            
+            // Extract unique categories
+            categories = menuItems
+                .Where(m => !string.IsNullOrEmpty(m.Category))
+                .Select(m => m.Category)
+                .Distinct()
+                .OrderBy(c => c)
+                .ToList();
+
+            // Create a new order or get existing one
+            var existingOrders = await OrderService.GetOrdersByTableAsync(TableId);
+            currentOrder = existingOrders.FirstOrDefault(o => o.Status == OrderStatus.Pending);
+            
+            if (currentOrder == null)
+            {
+                // Create a new order for this table
+                currentOrder = await OrderService.CreateOrderAsync(TableId);
+            }
+            else
+            {
+                // Load existing order items if any
+                foreach (var item in currentOrder.OrderItems)
+                {
+                    selectedItems.Add(item);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, $"Error loading data for table {TableId}");
+        }
+        finally
+        {
+            loading = false;
+        }
+    }
+
+    private void FilterByCategory(string category)
+    {
+        selectedCategory = category;
+    }
+
+    private async Task AddItemToOrder(MenuItem menuItem)
+    {
+        try
+        {
+            // Check if the item is already in the order
+            var existingItem = selectedItems.FirstOrDefault(i => i.MenuItemId == menuItem.Id);
+            
+            if (existingItem != null)
+            {
+                // Increment quantity if already in order
+                existingItem.Quantity++;
+            }
+            else
+            {
+                // Add new item to order
+                var orderItem = new OrderItem
+                {
+                    OrderId = currentOrder.Id,
+                    MenuItemId = menuItem.Id,
+                    MenuItem = menuItem,
+                    Quantity = 1,
+                    UnitPrice = menuItem.Price,
+                    SpecialInstructions = ""
+                };
+                
+                selectedItems.Add(orderItem);
+            }
+            
+            // Update the order in the database
+            await OrderService.AddItemToOrderAsync(
+                currentOrder.Id, 
+                menuItem.Id, 
+                existingItem?.Quantity ?? 1, 
+                "");
+            
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, $"Error adding item {menuItem.Id} to order");
+        }
+    }
+    
+    private async Task IncreaseItemQuantity(OrderItem item)
+    {
+        try
+        {
+            // Increment quantity
+            item.Quantity++;
+            
+            // Update the order in the database
+            await OrderService.AddItemToOrderAsync(
+                currentOrder.Id,
+                item.MenuItemId,
+                item.Quantity,
+                item.SpecialInstructions);
+                
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, $"Error increasing quantity for item {item.MenuItemId}");
+        }
+    }
+    
+    private async Task DecreaseItemQuantity(OrderItem item)
+    {
+        try
+        {
+            if (item.Quantity > 1)
+            {
+                // Decrement quantity
+                item.Quantity--;
+                
+                // Update the order in the database
+                await OrderService.AddItemToOrderAsync(
+                    currentOrder.Id,
+                    item.MenuItemId,
+                    item.Quantity,
+                    item.SpecialInstructions);
+            }
+            else
+            {
+                // If quantity would be 0, remove the item
+                await RemoveOrderItem(item);
+            }
+            
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, $"Error decreasing quantity for item {item.MenuItemId}");
+        }
+    }
+    
+    private async Task RemoveOrderItem(OrderItem item)
+    {
+        try
+        {
+            // Remove from local list
+            selectedItems.Remove(item);
+            
+            // Remove from database
+            await OrderService.RemoveItemFromOrderAsync(currentOrder.Id, item.Id);
+            
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, $"Error removing item {item.MenuItemId} from order");
+        }
+    }
+
+    private decimal CalculateTotal()
+    {
+        return selectedItems.Sum(item => item.Quantity * item.UnitPrice);
+    }
+
+    private async Task ConfirmOrder()
+    {
+        try
+        {
+            if (selectedItems.Any())
+            {
+                // Update order status to in progress
+                await OrderService.UpdateOrderStatusAsync(currentOrder.Id, OrderStatus.InProgress);
+                
+                // Update table status to occupied
+                await TableService.UpdateTableStatusAsync(TableId, true);
+                
+                // Navigate back to table overview
+                NavigationManager.NavigateTo("/Tables/TableOverview");
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, $"Error confirming order {currentOrder.Id}");
+        }
+    }
+
+    private void NavigateBack()
+    {
+        NavigationManager.NavigateTo("/Tables/TableOverview");
+    }
+}
+
+<style>
+    .menu-items-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .menu-categories {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+    }
+
+    @@media (max-width: 768px) {
+        .menu-items-grid {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .menu-items-grid {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+    }
+</style>

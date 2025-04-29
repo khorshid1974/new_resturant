@@ -1,0 +1,102 @@
+@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<div class="admin-container">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Admin Panel</h3>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="nav-item @(IsActive("/admin/dashboard") ? "active" : "")" @onclick="@(() => NavigateTo("/admin/dashboard"))">
+                <i class="bi bi-speedometer2"></i>
+                <span>Dashboard</span>
+            </div>
+            <div class="nav-item @(IsActive("/admin/menu") ? "active" : "")" @onclick="@(() => NavigateTo("/admin/menu"))">
+                <i class="bi bi-menu-button-wide"></i>
+                <span>Manage Menu</span>
+            </div>
+            <div class="nav-item @(IsActive("/admin/reports") ? "active" : "")" @onclick="@(() => NavigateTo("/admin/reports"))">
+                <i class="bi bi-menu-button-wide"></i>
+                <span>Report</span>
+            </div>
+            <div class="nav-item" @onclick="@(() => NavigateTo("/logout"))">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Logout</span>
+            </div>
+        </nav>
+    </div>
+    <div class="main-content">
+        @Body
+    </div>
+</div>
+
+<style>
+    .admin-container {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        width: 250px;
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+    }
+
+    .sidebar-header {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 1rem;
+    }
+
+    .sidebar-header h3 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .sidebar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        transition: background-color 0.2s;
+    }
+
+    .nav-item:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-item.active {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-item i {
+        font-size: 1.1rem;
+    }
+
+    .main-content {
+        flex: 1;
+        padding: 2rem;
+        background-color: #f8f9fa;
+    }
+</style>
+
+@code {
+    private bool IsActive(string path)
+    {
+        return NavigationManager.Uri.EndsWith(path);
+    }
+
+    private void NavigateTo(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+} 

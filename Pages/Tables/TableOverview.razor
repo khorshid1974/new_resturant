@@ -1,0 +1,178 @@
+@page "/Tables/TableOverview"
+@page "/tables"
+@using RestaurantApp.Data.Models
+@using RestaurantApp.Data.Services
+@using Microsoft.AspNetCore.Authorization
+@inject ITableService TableService
+@inject NavigationManager NavigationManager
+@inject ILogger<TableOverview> Logger
+@attribute [Authorize(Roles = "Admin,Staff, Waiter")]
+
+<div class="restaurant-container mt-4">
+    <div class="restaurant-header">
+        <div>
+            <h2><i class="oi oi-grid-three-up"></i> Restaurant Floor Plan</h2>
+            <p>Click on an available table to start taking orders</p>
+        </div>
+        <div>
+            <button class="btn btn-primary" @onclick="RefreshTables">
+                <i class="oi oi-reload"></i> Refresh Tables
+            </button>
+        </div>
+    </div>
+    
+    <div class="status-legend">
+        <div class="legend-item">
+            <span class="status-dot available"></span> Available
+        </div>
+        <div class="legend-item">
+            <span class="status-dot occupied"></span> Occupied
+        </div>
+    </div>
+
+    @if (loading)
+    {
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    }
+    else if (tables == null || !tables.Any())
+    {
+        <div class="alert alert-info">No tables found in the system.</div>
+    }
+    else
+    {
+        <div class="restaurant-floor">
+            @foreach (var table in tables)
+            {
+                <div class="table-grid-item">
+                    <TableCard Table="@table" OnTableSelected="HandleTableSelected" />
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private List<Table> tables;
+    private bool loading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadTables();
+    }
+
+    private async Task LoadTables()
+    {
+        try
+        {
+            loading = true;
+            tables = (await TableService.GetAllTablesAsync()).ToList();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error loading tables");
+        }
+        finally
+        {
+            loading = false;
+        }
+    }
+
+    private async Task RefreshTables()
+    {
+        await LoadTables();
+    }
+
+    private void HandleTableSelected(Table table)
+    {
+        if (!table.IsOccupied)
+        {
+            // Navigate to order taking page for available tables
+            NavigationManager.NavigateTo($"/Tables/TableOrderTaking/{table.Id}");
+        }
+        else
+        {
+            // Could show a message that the table is occupied
+            // or navigate to view the current order
+        }
+    }
+}
+
+<style>
+    .restaurant-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .restaurant-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .status-legend {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .status-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .status-dot.available {
+        background-color: #4CAF50;
+    }
+
+    .status-dot.occupied {
+        background-color: #F44336;
+    }
+
+    .restaurant-floor {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.5rem;
+        padding: 2rem;
+        background-color: #f8f9fa;
+        border-radius: 12px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        min-height: 500px;
+    }
+
+    @@media (max-width: 768px) {
+        .restaurant-floor {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .restaurant-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .restaurant-floor {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+    }
+</style>

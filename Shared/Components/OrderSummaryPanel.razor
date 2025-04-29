@@ -1,0 +1,195 @@
+@using RestaurantApp.Data.Models
+
+<div class="order-summary-panel">
+    <h3 class="panel-title">Order Summary</h3>
+    
+    @if (OrderItems.Any())
+    {
+        <div class="order-items">
+            @foreach (var item in OrderItems)
+            {
+                <div class="order-item">
+                    <div class="item-details">
+                        <span class="item-name">@item.MenuItem.Name</span>
+                    </div>
+                    <div class="item-actions">
+                        <div class="quantity-controls">
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="() => OnDecreaseQuantity(item)">
+                                <i class="bi bi-dash"></i>
+                            </button>
+                            <span class="item-quantity">@item.Quantity</span>
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="() => OnIncreaseQuantity(item)">
+                                <i class="bi bi-plus"></i>
+                            </button>
+                        </div>
+                        <button class="btn btn-sm btn-outline-danger remove-btn" @onclick="() => OnRemoveItem(item)">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+                    <div class="item-price">$@item.Subtotal.ToString("F2")</div>
+                </div>
+            }
+        </div>
+        
+        <div class="order-total">
+            <span>Total:</span>
+            <span class="total-amount">$@TotalAmount.ToString("F2")</span>
+        </div>
+        
+        <button class="btn btn-success btn-block confirm-button" @onclick="OnConfirmOrder">
+            Confirm Order
+        </button>
+    }
+    else
+    {
+        <div class="empty-order">
+            <p>No items added to the order yet.</p>
+            <p>Select menu items to add them to your order.</p>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+    
+    [Parameter]
+    public decimal TotalAmount { get; set; }
+    
+    [Parameter]
+    public EventCallback OnOrderConfirmed { get; set; }
+    
+    [Parameter]
+    public EventCallback<OrderItem> OnItemQuantityIncreased { get; set; }
+    
+    [Parameter]
+    public EventCallback<OrderItem> OnItemQuantityDecreased { get; set; }
+    
+    [Parameter]
+    public EventCallback<OrderItem> OnItemRemoved { get; set; }
+    
+    private async Task OnConfirmOrder()
+    {
+        await OnOrderConfirmed.InvokeAsync();
+    }
+    
+    private async Task OnIncreaseQuantity(OrderItem item)
+    {
+        await OnItemQuantityIncreased.InvokeAsync(item);
+    }
+    
+    private async Task OnDecreaseQuantity(OrderItem item)
+    {
+        await OnItemQuantityDecreased.InvokeAsync(item);
+    }
+    
+    private async Task OnRemoveItem(OrderItem item)
+    {
+        await OnItemRemoved.InvokeAsync(item);
+    }
+}
+
+<style>
+    .order-summary-panel {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 1.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .panel-title {
+        margin-bottom: 1.5rem;
+        color: #333;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #dee2e6;
+        padding-bottom: 0.75rem;
+    }
+    
+    .order-items {
+        flex-grow: 1;
+        overflow-y: auto;
+        margin-bottom: 1rem;
+    }
+    
+    .order-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .item-details {
+        flex: 1;
+        min-width: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .item-name {
+        font-weight: 500;
+    }
+    
+    .item-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .quantity-controls {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    
+    .item-quantity {
+        color: #6c757d;
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+        min-width: 1.5rem;
+        text-align: center;
+    }
+    
+    .remove-btn {
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .item-price {
+        font-weight: bold;
+    }
+    
+    .order-total {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 1rem 0;
+        padding-top: 0.75rem;
+        border-top: 2px solid #dee2e6;
+    }
+    
+    .total-amount {
+        color: #28a745;
+    }
+    
+    .confirm-button {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        font-size: 1.1rem;
+    }
+    
+    .empty-order {
+        text-align: center;
+        color: #6c757d;
+        padding: 2rem 0;
+    }
+    
+    @@media (max-width: 768px) {
+        .order-summary-panel {
+            margin-top: 1.5rem;
+        }
+    }
+</style>

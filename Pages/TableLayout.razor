@@ -1,0 +1,171 @@
+@page "/tabless"
+@using RestaurantApp.Data.Models
+@using RestaurantApp.Data.Services
+@using Microsoft.AspNetCore.SignalR
+@using RestaurantApp.Hubs
+@inject ITableService TableService
+@inject NavigationManager NavigationManager
+@inject IOrderService OrderService
+@inject IHubContext<OrderHub> HubContext
+@inject ILogger<TableLayout> Logger
+
+<div class="container mt-4">
+    <h2>Restaurant Floor Plan</h2>
+    <p>Click on an available table to start a new order.</p>
+
+    <div class="mb-3">
+        <button class="btn btn-primary" @onclick="RefreshTables">Refresh Tables</button>
+    </div>
+
+    @if (loading)
+    {
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    }
+    else if (tables == null || !tables.Any())
+    {
+        <div class="alert alert-info">No tables found in the system.</div>
+    }
+    else
+    {
+        <div class="table-grid">
+            @foreach (var table in tables)
+            {
+                <div class="table-item @(table.IsOccupied ? "occupied" : "available")" 
+                     @onclick="() => HandleTableClick(table)">
+                    <div class="table-content">
+                        <h4>@table.Name</h4>
+                        <p>Capacity: @table.Capacity</p>
+                        <p class="status">@(table.IsOccupied ? "Occupied" : "Available")</p>
+                        @if (table.LastOccupiedTime.HasValue && table.IsOccupied)
+                        {
+                            <p class="small">Since: @table.LastOccupiedTime.Value.ToLocalTime().ToString("g")</p>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private List<Table> tables;
+    private bool loading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadTablesAsync();
+    }
+
+    private async Task LoadTablesAsync()
+    {
+        try
+        {
+            loading = true;
+            var allTables = await TableService.GetAllTablesAsync();
+            tables = allTables.ToList();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error loading tables");
+        }
+        finally
+        {
+            loading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task RefreshTables()
+    {
+        await LoadTablesAsync();
+    }
+
+    private async Task HandleTableClick(Table table)
+    {
+        if (!table.IsOccupied)
+        {
+            try
+            {
+                // Mark table as occupied
+                await TableService.UpdateTableStatusAsync(table.Id, true);
+                
+                // Create a new order for this table
+                var order = await OrderService.CreateOrderAsync(table.Id);
+                
+                // Navigate to order taking page
+                NavigationManager.NavigateTo($"/order-taking?tableId={table.Id}&orderId={order.Id}");
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError(ex, $"Error handling table click for table {table.Id}");
+            }
+        }
+        else
+        {
+            // If table is occupied, we could navigate to view the current order
+            // or show a message that the table is not available
+            var orders = await OrderService.GetOrdersByTableAsync(table.Id);
+            var activeOrder = orders.FirstOrDefault(o => o.Status != OrderStatus.Completed && o.Status != OrderStatus.Cancelled);
+            
+            if (activeOrder != null)
+            {
+                NavigationManager.NavigateTo($"/order-taking?tableId={table.Id}&orderId={activeOrder.Id}");
+            }
+        }
+    }
+}
+
+<style>
+    .table-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .table-item {
+        border-radius: 8px;
+        padding: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .table-item.available {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .table-item.occupied {
+        background-color: #9E9E9E;
+        color: white;
+    }
+
+    .table-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .table-content {
+        width: 100%;
+    }
+
+    .status {
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .small {
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+</style>

@@ -1,0 +1,103 @@
+@page "/kitchen"
+@using RestaurantApp.Data.Models
+
+@using RestaurantApp.Data.Services
+@using RestaurantApp.Data.ViewModels
+@inject IOrderService OrderService
+@inject ILogger<KitchenView> Logger
+@attribute [Authorize(Roles = "Kitchen")]
+@layout KitchenLayout
+<div class="container mt-4">
+    <h2 class="kitchen-title">Kitchen Orders</h2>
+
+    @if (orders == null)
+    {
+        <p>Loading orders...</p>
+    }
+    else if (!orders.Any())
+    {
+        <div class="kitchen-empty-state">
+            <i class="bi bi-clipboard-check kitchen-empty-icon"></i>
+            <p class="kitchen-empty-text">No pending orders at the moment.</p>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var order in orders)
+            {
+                <div class="col-md-6 mb-4">
+                    <div class="card kitchen-order-card">
+                        <div class="card-header kitchen-card-header d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">Table @order.Table.Name</h5>
+                            <small class="kitchen-time">@order.OrderTime.ToString("HH:mm")</small>
+                        </div>
+                        <div class="card-body kitchen-card-body">
+                            @if (!string.IsNullOrWhiteSpace(order.SpecialInstructions))
+                            {
+                                <div class="kitchen-special-instructions">
+                                    <strong>Special Instructions:</strong>
+                                    <p class="mb-0">@order.SpecialInstructions</p>
+                                </div>
+                            }
+
+                            <div class="kitchen-item-list">
+                                @foreach (var item in order.OrderItems)
+                                {
+                                    <div class="kitchen-item">
+                                        <div>
+                                            <div class="kitchen-item-name">@item.MenuItem.Name</div>
+                                            @if (!string.IsNullOrWhiteSpace(item.SpecialInstructions))
+                                            {
+                                                <div class="kitchen-item-instructions">@item.SpecialInstructions</div>
+                                            }
+                                        </div>
+                                        <div class="kitchen-item-quantity">@item.Quantity</div>
+                                    </div>
+                                }
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="kitchen-action-button" @onclick="() => MarkAsPrepared(order)">
+                                    Mark as Prepared
+                                </button>
+                                <span class="kitchen-total">Total: $@order.TotalAmount.ToString("F2")</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private List<Order> orders = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            //orders = (await OrderService.GetPendingOrdersAsync()).ToList();
+            orders = (await OrderService.GetInProgressOrdersAsync()).ToList();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error loading pending orders");
+        }
+    }
+
+    private async Task MarkAsPrepared(Order order)
+    {
+        try
+        {
+            await OrderService.UpdateOrderStatusAsync(order.Id, OrderStatus.ReadyToServe);
+            orders.Remove(order);
+            Logger.LogInformation($"Order {order.Id} marked as prepared");
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, $"Error marking order {order.Id} as prepared");
+        }
+    }
+}

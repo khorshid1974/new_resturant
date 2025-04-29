@@ -1,0 +1,5575 @@
+{
+  "Version": 1,
+  "Hash": "VW5/8tBCtZEGDx7ySRPerWQPw0uefDqrUlTzpbmEf+o=",
+  "Source": "new_resturant",
+  "BasePath": "_content/new_resturant",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "new_resturant/wwwroot",
+      "Source": "new_resturant",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/4lc6xsve7v-wk8x8xm0ah.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint=wk8x8xm0ah}]?.otf.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5f5dv9y1qh",
+      "Integrity": "sf9/QxpY3f89l/RB0yP6Lk1hiTTWNdVrBT4R6j1EMGo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/72unk5skty-xtt4au1io5.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "js/cashier#[.{fingerprint=xtt4au1io5}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/js/cashier.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "p1my02f3sf",
+      "Integrity": "HZxix3uDf3A0PW0hO4YLfkLPN/ZW0ypY45nmg6ua+Ww=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/js/cashier.js"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/a1kx0rup22-3eoam70380.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/site#[.{fingerprint=3eoam70380}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/css/site.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "8oi2eqizxt",
+      "Integrity": "CCHEYTQcOeBCS7omZQQEm7IuGNJJHp/tTOwOcrY0w2c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/c99dg6qryw-cmapd0fi15.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min#[.{fingerprint=cmapd0fi15}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "kfhqrgg0g0",
+      "Integrity": "wBUytWozTS5t/guAjoMbKzBBdfPlpUV4ix3TrrUwKpg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/dqkcv654v8-8inm30yfxf.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint=8inm30yfxf}]?.map.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "a5iolpc9xz",
+      "Integrity": "3qo3UHtt1eBcfATKJXtIrY+ZdPuBA21DhCoR49jAwbE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/fpe6vnap4j-l5s6vinncg.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/kitchen#[.{fingerprint=l5s6vinncg}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/css/kitchen.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "wm2gjn46yj",
+      "Integrity": "WOAWkhk8Tlkg2bYWFeUcZu6OLu/mMw3Nh/ZN75Rezgo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/css/kitchen.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/he6capg2ks-728yastw8b.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/cashier#[.{fingerprint=728yastw8b}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/css/cashier.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "cvwsy3pc6q",
+      "Integrity": "mIxCc5iAxVPnaGEH/wt+nBJj1a3qDh5/r3UEyTBJKKs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/css/cashier.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/jgfe7mgf1g-6o8jgf4uvd.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "new_resturant#[.{fingerprint=6o8jgf4uvd}]?.styles.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/bundle/new_resturant.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "w1vto3ezu0",
+      "Integrity": "dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/bundle/new_resturant.styles.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/l3ly5udg82-5bzwdl5l6x.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/README#[.{fingerprint=5bzwdl5l6x}]?.md.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/README.md",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "y2w10n3b81",
+      "Integrity": "qgRso4o4WG91g/KGQUrB40Mwmp5sDdyYdHlmx/VwhcY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/README.md"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/pe4dn5xrl3-bpk8xqwxhs.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint=bpk8xqwxhs}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/css/bootstrap/bootstrap.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "wg8z90xh4u",
+      "Integrity": "oA7vaP7X1hcAU8RGnp4MFBWtZmukcKCru5+LrmzIqeg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/q57mhjwo5a-6o8jgf4uvd.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "new_resturant#[.{fingerprint=6o8jgf4uvd}]!.bundle.scp.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/projectbundle/new_resturant.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "w1vto3ezu0",
+      "Integrity": "dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/projectbundle/new_resturant.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/w1pbgo583p-dm2w8xwqss.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "js/print#[.{fingerprint=dm2w8xwqss}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/js/print.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ryofsgg97l",
+      "Integrity": "3begAj//sm3GpN19XYA6eW4txKgdQk2acjNaFBa8Khc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/js/print.js"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/wx729lne80-sjnzgf7e1h.gz",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint=sjnzgf7e1h}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "i4r29wi5rk",
+      "Integrity": "0n4OBQVOXi8Sm/2bOfnzWT8c37ETixim+9nKHP1clyk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/bundle/new_resturant.styles.css",
+      "SourceId": "new_resturant",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/bundle/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "new_resturant#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "6o8jgf4uvd",
+      "Integrity": "ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/bundle/new_resturant.styles.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/projectbundle/new_resturant.bundle.scp.css",
+      "SourceId": "new_resturant",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/projectbundle/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "new_resturant#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "6o8jgf4uvd",
+      "Integrity": "ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/projectbundle/new_resturant.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/bootstrap/bootstrap.min.css",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bpk8xqwxhs",
+      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/cashier.css",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/cashier#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "728yastw8b",
+      "Integrity": "T2eDW7oiDisrW9I7DDBJLGGx3VEDSHMviyFk+kiSUNs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/cashier.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/kitchen.css",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/kitchen#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l5s6vinncg",
+      "Integrity": "CQs9PlofAQxunszcvb6C0ocsCNq8KzlDcnt5n6RHqsU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/kitchen.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/FONT-LICENSE",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/FONT-LICENSE#[.{fingerprint}]?",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "48tmkg660f",
+      "Integrity": "jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cmapd0fi15",
+      "Integrity": "BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.eot",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0uw8dim9nl",
+      "Integrity": "OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.otf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wk8x8xm0ah",
+      "Integrity": "sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sjnzgf7e1h",
+      "Integrity": "+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ll5grcv8wv",
+      "Integrity": "p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h4d0pazwgy",
+      "Integrity": "cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/ICON-LICENSE",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/ICON-LICENSE#[.{fingerprint}]?",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4dwjve0o0b",
+      "Integrity": "aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/README.md",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/open-iconic/README#[.{fingerprint}]?.md",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5bzwdl5l6x",
+      "Integrity": "waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/css/site.css",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3eoam70380",
+      "Integrity": "BVQnVfQLpUehEHxeYwODHMxEWt9yJMpnBRqSIRBAWEQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/favicon.png",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon.png"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/images/restaurant-hero.jpg",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "images/restaurant-hero#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aiowpz6fek",
+      "Integrity": "7naVPtuFMKrVA7HoMZIgzGhqKDgZTJzsRCMA7qCb52w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/restaurant-hero.jpg"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/js/cashier.js",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "js/cashier#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xtt4au1io5",
+      "Integrity": "+32hVpgAUFLbDx34c1+iROoO7zIFzt+915weShxbDao=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/cashier.js"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/js/print.js",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "js/print#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dm2w8xwqss",
+      "Integrity": "u34cG6ltdT7Dn810NYh0CqkvOau0yO/F1OBYqWaH2ns=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/print.js"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/008cc68a-0c36-420f-bdfa-265fed846d23_markus-winkler-WHtVB-RiW2I-unsplash.jpg",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "uploads/008cc68a-0c36-420f-bdfa-265fed846d23_markus-winkler-WHtVB-RiW2I-unsplash#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yiwbzz4r3d",
+      "Integrity": "lhcuwUj5GL2MG72cD1rt5ySomHbs9iWuzBzPOWHB37g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/008cc68a-0c36-420f-bdfa-265fed846d23_markus-winkler-WHtVB-RiW2I-unsplash.jpg"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/0681dcae-118f-4c28-93f1-c3aec145ee0b_healthy-barbecue-different-meat-with-vegetables-sauce_141438-299.jpg",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "uploads/0681dcae-118f-4c28-93f1-c3aec145ee0b_healthy-barbecue-different-meat-with-vegetables-sauce_141438-299#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bebso67nfr",
+      "Integrity": "Tbfo+Jt6dhvuTdLOPAauwKsgov8ybLQEecmoU+slqyE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/0681dcae-118f-4c28-93f1-c3aec145ee0b_healthy-barbecue-different-meat-with-vegetables-sauce_141438-299.jpg"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/562d789a-1358-496e-815d-b263a19b9b2b_OIP (6).jpeg",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "uploads/562d789a-1358-496e-815d-b263a19b9b2b_OIP (6)#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9lxt8yibar",
+      "Integrity": "Tf9t/PJd3Rh9H3tstmAWgj9A/BAISPzlNPyCIPebBN8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/562d789a-1358-496e-815d-b263a19b9b2b_OIP (6).jpeg"
+    },
+    {
+      "Identity": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/a4db17cb-3fd9-47f2-85cd-ceebfc542414_R.jpeg",
+      "SourceId": "new_resturant",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/khorshidhamza/new_resturant/wwwroot/",
+      "BasePath": "_content/new_resturant",
+      "RelativePath": "uploads/a4db17cb-3fd9-47f2-85cd-ceebfc542414_R#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oese8ee5qn",
+      "Integrity": "UKfchvgtNJ4e1Au+ag27vMWZ6lz751tQh1685Hp07E8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/a4db17cb-3fd9-47f2-85cd-ceebfc542414_R.jpeg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/pe4dn5xrl3-bpk8xqwxhs.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000041925205"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23851"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oA7vaP7X1hcAU8RGnp4MFBWtZmukcKCru5+LrmzIqeg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.bpk8xqwxhs.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/pe4dn5xrl3-bpk8xqwxhs.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23851"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oA7vaP7X1hcAU8RGnp4MFBWtZmukcKCru5+LrmzIqeg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oA7vaP7X1hcAU8RGnp4MFBWtZmukcKCru5+LrmzIqeg="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/pe4dn5xrl3-bpk8xqwxhs.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000041925205"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23851"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oA7vaP7X1hcAU8RGnp4MFBWtZmukcKCru5+LrmzIqeg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/dqkcv654v8-8inm30yfxf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000013397104"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74642"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3qo3UHtt1eBcfATKJXtIrY+ZdPuBA21DhCoR49jAwbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/dqkcv654v8-8inm30yfxf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3qo3UHtt1eBcfATKJXtIrY+ZdPuBA21DhCoR49jAwbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3qo3UHtt1eBcfATKJXtIrY+ZdPuBA21DhCoR49jAwbE="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/pe4dn5xrl3-bpk8xqwxhs.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23851"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oA7vaP7X1hcAU8RGnp4MFBWtZmukcKCru5+LrmzIqeg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oA7vaP7X1hcAU8RGnp4MFBWtZmukcKCru5+LrmzIqeg="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/dqkcv654v8-8inm30yfxf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000013397104"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74642"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3qo3UHtt1eBcfATKJXtIrY+ZdPuBA21DhCoR49jAwbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/dqkcv654v8-8inm30yfxf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3qo3UHtt1eBcfATKJXtIrY+ZdPuBA21DhCoR49jAwbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3qo3UHtt1eBcfATKJXtIrY+ZdPuBA21DhCoR49jAwbE="
+        }
+      ]
+    },
+    {
+      "Route": "css/cashier.728yastw8b.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/he6capg2ks-728yastw8b.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000790513834"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1264"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mIxCc5iAxVPnaGEH/wt+nBJj1a3qDh5/r3UEyTBJKKs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:40:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"T2eDW7oiDisrW9I7DDBJLGGx3VEDSHMviyFk+kiSUNs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "728yastw8b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cashier.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T2eDW7oiDisrW9I7DDBJLGGx3VEDSHMviyFk+kiSUNs="
+        }
+      ]
+    },
+    {
+      "Route": "css/cashier.728yastw8b.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/cashier.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T2eDW7oiDisrW9I7DDBJLGGx3VEDSHMviyFk+kiSUNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:40:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "728yastw8b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cashier.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T2eDW7oiDisrW9I7DDBJLGGx3VEDSHMviyFk+kiSUNs="
+        }
+      ]
+    },
+    {
+      "Route": "css/cashier.728yastw8b.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/he6capg2ks-728yastw8b.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1264"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mIxCc5iAxVPnaGEH/wt+nBJj1a3qDh5/r3UEyTBJKKs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:40:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "728yastw8b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cashier.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mIxCc5iAxVPnaGEH/wt+nBJj1a3qDh5/r3UEyTBJKKs="
+        }
+      ]
+    },
+    {
+      "Route": "css/cashier.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/he6capg2ks-728yastw8b.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000790513834"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1264"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mIxCc5iAxVPnaGEH/wt+nBJj1a3qDh5/r3UEyTBJKKs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:40:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"T2eDW7oiDisrW9I7DDBJLGGx3VEDSHMviyFk+kiSUNs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T2eDW7oiDisrW9I7DDBJLGGx3VEDSHMviyFk+kiSUNs="
+        }
+      ]
+    },
+    {
+      "Route": "css/cashier.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/cashier.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T2eDW7oiDisrW9I7DDBJLGGx3VEDSHMviyFk+kiSUNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:40:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T2eDW7oiDisrW9I7DDBJLGGx3VEDSHMviyFk+kiSUNs="
+        }
+      ]
+    },
+    {
+      "Route": "css/cashier.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/he6capg2ks-728yastw8b.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1264"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mIxCc5iAxVPnaGEH/wt+nBJj1a3qDh5/r3UEyTBJKKs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:40:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mIxCc5iAxVPnaGEH/wt+nBJj1a3qDh5/r3UEyTBJKKs="
+        }
+      ]
+    },
+    {
+      "Route": "css/kitchen.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/fpe6vnap4j-l5s6vinncg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000972762646"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1027"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WOAWkhk8Tlkg2bYWFeUcZu6OLu/mMw3Nh/ZN75Rezgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 14:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CQs9PlofAQxunszcvb6C0ocsCNq8KzlDcnt5n6RHqsU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CQs9PlofAQxunszcvb6C0ocsCNq8KzlDcnt5n6RHqsU="
+        }
+      ]
+    },
+    {
+      "Route": "css/kitchen.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/kitchen.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CQs9PlofAQxunszcvb6C0ocsCNq8KzlDcnt5n6RHqsU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 14:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CQs9PlofAQxunszcvb6C0ocsCNq8KzlDcnt5n6RHqsU="
+        }
+      ]
+    },
+    {
+      "Route": "css/kitchen.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/fpe6vnap4j-l5s6vinncg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1027"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WOAWkhk8Tlkg2bYWFeUcZu6OLu/mMw3Nh/ZN75Rezgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 14:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WOAWkhk8Tlkg2bYWFeUcZu6OLu/mMw3Nh/ZN75Rezgo="
+        }
+      ]
+    },
+    {
+      "Route": "css/kitchen.l5s6vinncg.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/fpe6vnap4j-l5s6vinncg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000972762646"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1027"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WOAWkhk8Tlkg2bYWFeUcZu6OLu/mMw3Nh/ZN75Rezgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 14:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CQs9PlofAQxunszcvb6C0ocsCNq8KzlDcnt5n6RHqsU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l5s6vinncg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/kitchen.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CQs9PlofAQxunszcvb6C0ocsCNq8KzlDcnt5n6RHqsU="
+        }
+      ]
+    },
+    {
+      "Route": "css/kitchen.l5s6vinncg.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/kitchen.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CQs9PlofAQxunszcvb6C0ocsCNq8KzlDcnt5n6RHqsU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 14:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l5s6vinncg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/kitchen.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CQs9PlofAQxunszcvb6C0ocsCNq8KzlDcnt5n6RHqsU="
+        }
+      ]
+    },
+    {
+      "Route": "css/kitchen.l5s6vinncg.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/fpe6vnap4j-l5s6vinncg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1027"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WOAWkhk8Tlkg2bYWFeUcZu6OLu/mMw3Nh/ZN75Rezgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 14:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l5s6vinncg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/kitchen.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WOAWkhk8Tlkg2bYWFeUcZu6OLu/mMw3Nh/ZN75Rezgo="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/FONT-LICENSE",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/FONT-LICENSE.48tmkg660f",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "48tmkg660f"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/FONT-LICENSE"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.cmapd0fi15.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/c99dg6qryw-cmapd0fi15.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000474608448"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2106"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wBUytWozTS5t/guAjoMbKzBBdfPlpUV4ix3TrrUwKpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cmapd0fi15"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.cmapd0fi15.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cmapd0fi15"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.cmapd0fi15.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/c99dg6qryw-cmapd0fi15.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2106"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wBUytWozTS5t/guAjoMbKzBBdfPlpUV4ix3TrrUwKpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cmapd0fi15"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/css/open-iconic-bootstrap.min.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wBUytWozTS5t/guAjoMbKzBBdfPlpUV4ix3TrrUwKpg="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/c99dg6qryw-cmapd0fi15.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000474608448"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2106"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wBUytWozTS5t/guAjoMbKzBBdfPlpUV4ix3TrrUwKpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/c99dg6qryw-cmapd0fi15.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2106"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wBUytWozTS5t/guAjoMbKzBBdfPlpUV4ix3TrrUwKpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wBUytWozTS5t/guAjoMbKzBBdfPlpUV4ix3TrrUwKpg="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.0uw8dim9nl.eot",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-fontobject"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0uw8dim9nl"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.eot"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.eot",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-fontobject"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.h4d0pazwgy.woff",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14984"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h4d0pazwgy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.woff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.ll5grcv8wv.ttf",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ll5grcv8wv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.otf",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/4lc6xsve7v-wk8x8xm0ah.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000076528660"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13066"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sf9/QxpY3f89l/RB0yP6Lk1hiTTWNdVrBT4R6j1EMGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.otf",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.otf.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/4lc6xsve7v-wk8x8xm0ah.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sf9/QxpY3f89l/RB0yP6Lk1hiTTWNdVrBT4R6j1EMGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sf9/QxpY3f89l/RB0yP6Lk1hiTTWNdVrBT4R6j1EMGo="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.sjnzgf7e1h.svg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/wx729lne80-sjnzgf7e1h.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000074266617"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13464"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0n4OBQVOXi8Sm/2bOfnzWT8c37ETixim+9nKHP1clyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sjnzgf7e1h"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.sjnzgf7e1h.svg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sjnzgf7e1h"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.sjnzgf7e1h.svg.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/wx729lne80-sjnzgf7e1h.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0n4OBQVOXi8Sm/2bOfnzWT8c37ETixim+9nKHP1clyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sjnzgf7e1h"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0n4OBQVOXi8Sm/2bOfnzWT8c37ETixim+9nKHP1clyk="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.svg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/wx729lne80-sjnzgf7e1h.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000074266617"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13464"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0n4OBQVOXi8Sm/2bOfnzWT8c37ETixim+9nKHP1clyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.svg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.svg.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/wx729lne80-sjnzgf7e1h.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0n4OBQVOXi8Sm/2bOfnzWT8c37ETixim+9nKHP1clyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0n4OBQVOXi8Sm/2bOfnzWT8c37ETixim+9nKHP1clyk="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.ttf",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.wk8x8xm0ah.otf",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/4lc6xsve7v-wk8x8xm0ah.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000076528660"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13066"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sf9/QxpY3f89l/RB0yP6Lk1hiTTWNdVrBT4R6j1EMGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wk8x8xm0ah"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.otf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.wk8x8xm0ah.otf",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wk8x8xm0ah"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.otf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.wk8x8xm0ah.otf.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/4lc6xsve7v-wk8x8xm0ah.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sf9/QxpY3f89l/RB0yP6Lk1hiTTWNdVrBT4R6j1EMGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wk8x8xm0ah"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.otf.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sf9/QxpY3f89l/RB0yP6Lk1hiTTWNdVrBT4R6j1EMGo="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.woff",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14984"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/ICON-LICENSE",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/ICON-LICENSE.4dwjve0o0b",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4dwjve0o0b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/ICON-LICENSE"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/README.5bzwdl5l6x.md",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/l3ly5udg82-5bzwdl5l6x.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000673400673"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1484"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qgRso4o4WG91g/KGQUrB40Mwmp5sDdyYdHlmx/VwhcY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5bzwdl5l6x"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/README.md"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/README.5bzwdl5l6x.md",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5bzwdl5l6x"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/README.md"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/README.5bzwdl5l6x.md.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/l3ly5udg82-5bzwdl5l6x.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qgRso4o4WG91g/KGQUrB40Mwmp5sDdyYdHlmx/VwhcY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5bzwdl5l6x"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/README.md.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qgRso4o4WG91g/KGQUrB40Mwmp5sDdyYdHlmx/VwhcY="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/README.md",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/l3ly5udg82-5bzwdl5l6x.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000673400673"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1484"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qgRso4o4WG91g/KGQUrB40Mwmp5sDdyYdHlmx/VwhcY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/README.md",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/open-iconic/README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/README.md.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/l3ly5udg82-5bzwdl5l6x.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qgRso4o4WG91g/KGQUrB40Mwmp5sDdyYdHlmx/VwhcY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qgRso4o4WG91g/KGQUrB40Mwmp5sDdyYdHlmx/VwhcY="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.3eoam70380.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/a1kx0rup22-3eoam70380.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000501002004"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1995"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CCHEYTQcOeBCS7omZQQEm7IuGNJJHp/tTOwOcrY0w2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 12:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BVQnVfQLpUehEHxeYwODHMxEWt9yJMpnBRqSIRBAWEQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3eoam70380"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BVQnVfQLpUehEHxeYwODHMxEWt9yJMpnBRqSIRBAWEQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.3eoam70380.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4023"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BVQnVfQLpUehEHxeYwODHMxEWt9yJMpnBRqSIRBAWEQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 12:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3eoam70380"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BVQnVfQLpUehEHxeYwODHMxEWt9yJMpnBRqSIRBAWEQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.3eoam70380.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/a1kx0rup22-3eoam70380.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1995"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CCHEYTQcOeBCS7omZQQEm7IuGNJJHp/tTOwOcrY0w2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 12:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3eoam70380"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CCHEYTQcOeBCS7omZQQEm7IuGNJJHp/tTOwOcrY0w2c="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/a1kx0rup22-3eoam70380.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000501002004"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1995"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CCHEYTQcOeBCS7omZQQEm7IuGNJJHp/tTOwOcrY0w2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 12:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BVQnVfQLpUehEHxeYwODHMxEWt9yJMpnBRqSIRBAWEQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BVQnVfQLpUehEHxeYwODHMxEWt9yJMpnBRqSIRBAWEQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4023"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BVQnVfQLpUehEHxeYwODHMxEWt9yJMpnBRqSIRBAWEQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 12:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BVQnVfQLpUehEHxeYwODHMxEWt9yJMpnBRqSIRBAWEQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/a1kx0rup22-3eoam70380.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1995"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CCHEYTQcOeBCS7omZQQEm7IuGNJJHp/tTOwOcrY0w2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 12:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CCHEYTQcOeBCS7omZQQEm7IuGNJJHp/tTOwOcrY0w2c="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "images/restaurant-hero.aiowpz6fek.jpg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/images/restaurant-hero.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7naVPtuFMKrVA7HoMZIgzGhqKDgZTJzsRCMA7qCb52w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 13:37:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aiowpz6fek"
+        },
+        {
+          "Name": "label",
+          "Value": "images/restaurant-hero.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7naVPtuFMKrVA7HoMZIgzGhqKDgZTJzsRCMA7qCb52w="
+        }
+      ]
+    },
+    {
+      "Route": "images/restaurant-hero.jpg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/images/restaurant-hero.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7naVPtuFMKrVA7HoMZIgzGhqKDgZTJzsRCMA7qCb52w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 13:37:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7naVPtuFMKrVA7HoMZIgzGhqKDgZTJzsRCMA7qCb52w="
+        }
+      ]
+    },
+    {
+      "Route": "js/cashier.js",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/72unk5skty-xtt4au1io5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001531393568"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "652"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HZxix3uDf3A0PW0hO4YLfkLPN/ZW0ypY45nmg6ua+Ww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:41:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+32hVpgAUFLbDx34c1+iROoO7zIFzt+915weShxbDao=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+32hVpgAUFLbDx34c1+iROoO7zIFzt+915weShxbDao="
+        }
+      ]
+    },
+    {
+      "Route": "js/cashier.js",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/js/cashier.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1963"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+32hVpgAUFLbDx34c1+iROoO7zIFzt+915weShxbDao=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:41:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+32hVpgAUFLbDx34c1+iROoO7zIFzt+915weShxbDao="
+        }
+      ]
+    },
+    {
+      "Route": "js/cashier.js.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/72unk5skty-xtt4au1io5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "652"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HZxix3uDf3A0PW0hO4YLfkLPN/ZW0ypY45nmg6ua+Ww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:41:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HZxix3uDf3A0PW0hO4YLfkLPN/ZW0ypY45nmg6ua+Ww="
+        }
+      ]
+    },
+    {
+      "Route": "js/cashier.xtt4au1io5.js",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/72unk5skty-xtt4au1io5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001531393568"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "652"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HZxix3uDf3A0PW0hO4YLfkLPN/ZW0ypY45nmg6ua+Ww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:41:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+32hVpgAUFLbDx34c1+iROoO7zIFzt+915weShxbDao=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xtt4au1io5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cashier.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+32hVpgAUFLbDx34c1+iROoO7zIFzt+915weShxbDao="
+        }
+      ]
+    },
+    {
+      "Route": "js/cashier.xtt4au1io5.js",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/js/cashier.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1963"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+32hVpgAUFLbDx34c1+iROoO7zIFzt+915weShxbDao=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:41:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xtt4au1io5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cashier.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+32hVpgAUFLbDx34c1+iROoO7zIFzt+915weShxbDao="
+        }
+      ]
+    },
+    {
+      "Route": "js/cashier.xtt4au1io5.js.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/72unk5skty-xtt4au1io5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "652"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HZxix3uDf3A0PW0hO4YLfkLPN/ZW0ypY45nmg6ua+Ww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 07:41:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xtt4au1io5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cashier.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HZxix3uDf3A0PW0hO4YLfkLPN/ZW0ypY45nmg6ua+Ww="
+        }
+      ]
+    },
+    {
+      "Route": "js/print.dm2w8xwqss.js",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/w1pbgo583p-dm2w8xwqss.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000430848772"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2320"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3begAj//sm3GpN19XYA6eW4txKgdQk2acjNaFBa8Khc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"u34cG6ltdT7Dn810NYh0CqkvOau0yO/F1OBYqWaH2ns=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dm2w8xwqss"
+        },
+        {
+          "Name": "label",
+          "Value": "js/print.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u34cG6ltdT7Dn810NYh0CqkvOau0yO/F1OBYqWaH2ns="
+        }
+      ]
+    },
+    {
+      "Route": "js/print.dm2w8xwqss.js",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/js/print.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u34cG6ltdT7Dn810NYh0CqkvOau0yO/F1OBYqWaH2ns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dm2w8xwqss"
+        },
+        {
+          "Name": "label",
+          "Value": "js/print.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u34cG6ltdT7Dn810NYh0CqkvOau0yO/F1OBYqWaH2ns="
+        }
+      ]
+    },
+    {
+      "Route": "js/print.dm2w8xwqss.js.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/w1pbgo583p-dm2w8xwqss.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2320"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3begAj//sm3GpN19XYA6eW4txKgdQk2acjNaFBa8Khc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dm2w8xwqss"
+        },
+        {
+          "Name": "label",
+          "Value": "js/print.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3begAj//sm3GpN19XYA6eW4txKgdQk2acjNaFBa8Khc="
+        }
+      ]
+    },
+    {
+      "Route": "js/print.js",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/w1pbgo583p-dm2w8xwqss.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000430848772"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2320"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3begAj//sm3GpN19XYA6eW4txKgdQk2acjNaFBa8Khc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"u34cG6ltdT7Dn810NYh0CqkvOau0yO/F1OBYqWaH2ns=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u34cG6ltdT7Dn810NYh0CqkvOau0yO/F1OBYqWaH2ns="
+        }
+      ]
+    },
+    {
+      "Route": "js/print.js",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/js/print.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u34cG6ltdT7Dn810NYh0CqkvOau0yO/F1OBYqWaH2ns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u34cG6ltdT7Dn810NYh0CqkvOau0yO/F1OBYqWaH2ns="
+        }
+      ]
+    },
+    {
+      "Route": "js/print.js.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/w1pbgo583p-dm2w8xwqss.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2320"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3begAj//sm3GpN19XYA6eW4txKgdQk2acjNaFBa8Khc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3begAj//sm3GpN19XYA6eW4txKgdQk2acjNaFBa8Khc="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.6o8jgf4uvd.bundle.scp.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/q57mhjwo5a-6o8jgf4uvd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001076426265"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6o8jgf4uvd"
+        },
+        {
+          "Name": "label",
+          "Value": "new_resturant.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.6o8jgf4uvd.bundle.scp.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/projectbundle/new_resturant.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6o8jgf4uvd"
+        },
+        {
+          "Name": "label",
+          "Value": "new_resturant.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.6o8jgf4uvd.bundle.scp.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/q57mhjwo5a-6o8jgf4uvd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6o8jgf4uvd"
+        },
+        {
+          "Name": "label",
+          "Value": "new_resturant.bundle.scp.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.6o8jgf4uvd.styles.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/jgfe7mgf1g-6o8jgf4uvd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001076426265"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6o8jgf4uvd"
+        },
+        {
+          "Name": "label",
+          "Value": "new_resturant.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.6o8jgf4uvd.styles.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/bundle/new_resturant.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6o8jgf4uvd"
+        },
+        {
+          "Name": "label",
+          "Value": "new_resturant.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.6o8jgf4uvd.styles.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/jgfe7mgf1g-6o8jgf4uvd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6o8jgf4uvd"
+        },
+        {
+          "Name": "label",
+          "Value": "new_resturant.styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.bundle.scp.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/q57mhjwo5a-6o8jgf4uvd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001076426265"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.bundle.scp.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/projectbundle/new_resturant.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.bundle.scp.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/q57mhjwo5a-6o8jgf4uvd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.styles.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/jgfe7mgf1g-6o8jgf4uvd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001076426265"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.styles.css",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/scopedcss/bundle/new_resturant.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ph5yqZGHD24i0J0iBzdTXPdwEOZqBnifI38qfoMFKLc="
+        }
+      ]
+    },
+    {
+      "Route": "new_resturant.styles.css.gz",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/obj/Debug/net9.0/compressed/jgfe7mgf1g-6o8jgf4uvd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dObvBTRdf7tCaWqSCygIKCGPUv6/jkL2ek3vU/oBNeY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/008cc68a-0c36-420f-bdfa-265fed846d23_markus-winkler-WHtVB-RiW2I-unsplash.jpg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/008cc68a-0c36-420f-bdfa-265fed846d23_markus-winkler-WHtVB-RiW2I-unsplash.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2751510"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lhcuwUj5GL2MG72cD1rt5ySomHbs9iWuzBzPOWHB37g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 13:56:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lhcuwUj5GL2MG72cD1rt5ySomHbs9iWuzBzPOWHB37g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/008cc68a-0c36-420f-bdfa-265fed846d23_markus-winkler-WHtVB-RiW2I-unsplash.yiwbzz4r3d.jpg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/008cc68a-0c36-420f-bdfa-265fed846d23_markus-winkler-WHtVB-RiW2I-unsplash.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2751510"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lhcuwUj5GL2MG72cD1rt5ySomHbs9iWuzBzPOWHB37g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 13:56:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yiwbzz4r3d"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/008cc68a-0c36-420f-bdfa-265fed846d23_markus-winkler-WHtVB-RiW2I-unsplash.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lhcuwUj5GL2MG72cD1rt5ySomHbs9iWuzBzPOWHB37g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0681dcae-118f-4c28-93f1-c3aec145ee0b_healthy-barbecue-different-meat-with-vegetables-sauce_141438-299.bebso67nfr.jpg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/0681dcae-118f-4c28-93f1-c3aec145ee0b_healthy-barbecue-different-meat-with-vegetables-sauce_141438-299.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tbfo+Jt6dhvuTdLOPAauwKsgov8ybLQEecmoU+slqyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 18:35:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bebso67nfr"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/0681dcae-118f-4c28-93f1-c3aec145ee0b_healthy-barbecue-different-meat-with-vegetables-sauce_141438-299.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tbfo+Jt6dhvuTdLOPAauwKsgov8ybLQEecmoU+slqyE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0681dcae-118f-4c28-93f1-c3aec145ee0b_healthy-barbecue-different-meat-with-vegetables-sauce_141438-299.jpg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/0681dcae-118f-4c28-93f1-c3aec145ee0b_healthy-barbecue-different-meat-with-vegetables-sauce_141438-299.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tbfo+Jt6dhvuTdLOPAauwKsgov8ybLQEecmoU+slqyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 18:35:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tbfo+Jt6dhvuTdLOPAauwKsgov8ybLQEecmoU+slqyE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/562d789a-1358-496e-815d-b263a19b9b2b_OIP (6).9lxt8yibar.jpeg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/562d789a-1358-496e-815d-b263a19b9b2b_OIP (6).jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tf9t/PJd3Rh9H3tstmAWgj9A/BAISPzlNPyCIPebBN8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 13:58:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9lxt8yibar"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/562d789a-1358-496e-815d-b263a19b9b2b_OIP (6).jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tf9t/PJd3Rh9H3tstmAWgj9A/BAISPzlNPyCIPebBN8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/562d789a-1358-496e-815d-b263a19b9b2b_OIP (6).jpeg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/562d789a-1358-496e-815d-b263a19b9b2b_OIP (6).jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tf9t/PJd3Rh9H3tstmAWgj9A/BAISPzlNPyCIPebBN8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 13:58:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tf9t/PJd3Rh9H3tstmAWgj9A/BAISPzlNPyCIPebBN8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a4db17cb-3fd9-47f2-85cd-ceebfc542414_R.jpeg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/a4db17cb-3fd9-47f2-85cd-ceebfc542414_R.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "372461"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UKfchvgtNJ4e1Au+ag27vMWZ6lz751tQh1685Hp07E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 18:33:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UKfchvgtNJ4e1Au+ag27vMWZ6lz751tQh1685Hp07E8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a4db17cb-3fd9-47f2-85cd-ceebfc542414_R.oese8ee5qn.jpeg",
+      "AssetFile": "/Users/khorshidhamza/new_resturant/wwwroot/uploads/a4db17cb-3fd9-47f2-85cd-ceebfc542414_R.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "372461"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UKfchvgtNJ4e1Au+ag27vMWZ6lz751tQh1685Hp07E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 18:33:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oese8ee5qn"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a4db17cb-3fd9-47f2-85cd-ceebfc542414_R.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UKfchvgtNJ4e1Au+ag27vMWZ6lz751tQh1685Hp07E8="
+        }
+      ]
+    }
+  ]
+}

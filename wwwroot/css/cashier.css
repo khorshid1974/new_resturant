@@ -1,0 +1,183 @@
+/* Cashier Page Accounting Theme Styles */
+
+/* Background pattern with subtle money/accounting elements */
+.cashier-container {
+    background-color: #f8f9fa;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e0e5ec' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Page header styling */
+.cashier-header {
+    color: #2c3e50;
+    font-weight: 600;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cashier-header::before {
+    content: '$';
+    font-size: 1.2rem;
+    color: #27ae60;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* Order card styling to look like financial statements */
+.accounting-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.accounting-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #3498db;
+}
+
+.accounting-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card header styling */
+.accounting-card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-name {
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.order-time {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Table styling */
+.accounting-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.accounting-table th {
+    background-color: #f1f5f9;
+    color: #2c3e50;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+.accounting-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #34495e;
+}
+
+.accounting-table tfoot {
+    background-color: #f8fafc;
+}
+
+.accounting-table tfoot td {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Amount styling */
+.amount {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+}
+
+.total-amount {
+    color: #27ae60;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Button styling */
+.accounting-btn {
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accounting-btn i {
+    margin-right: 6px;
+}
+
+.print-btn {
+    background-color: #f1f5f9;
+    color: #2c3e50;
+    border: 1px solid #ddd;
+}
+
+.print-btn:hover {
+    background-color: #e2e8f0;
+}
+
+.paid-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+}
+
+.paid-btn:hover {
+    background-color: #219653;
+}
+
+/* Special instructions styling */
+.special-instructions {
+    background-color: #fff8e1;
+    border-left: 4px solid #ffc107;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.special-instructions strong {
+    color: #f39c12;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Empty state styling */
+.empty-state {
+    background-color: #f8f9fa;
+    border: 1px dashed #ced4da;
+    border-radius: 6px;
+    padding: 30px;
+    text-align: center;
+    color: #6c757d;
+}
+
+/* Loading state */
+.loading-state {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}

@@ -1,0 +1,167 @@
+/* Kitchen Theme CSS */
+
+:root {
+    --kitchen-primary: #2e7d32;      /* Dark green */
+    --kitchen-secondary: #4caf50;    /* Medium green */
+    --kitchen-light: #81c784;        /* Light green */
+    --kitchen-accent: #1b5e20;       /* Very dark green */
+    --kitchen-background: #f1f8e9;   /* Very light green background */
+    --kitchen-text: #212121;         /* Dark text */
+    --kitchen-text-light: #f5f5f5;   /* Light text */
+    --kitchen-warning: #ff9800;      /* Orange for warnings */
+    --kitchen-danger: #f44336;       /* Red for errors/important */
+    --kitchen-success: #66bb6a;      /* Success green */
+    --kitchen-border: #c8e6c9;       /* Border color */
+}
+
+/* Kitchen Layout Styling */
+.kitchen-container {
+    background-color: var(--kitchen-background);
+    min-height: 100vh;
+}
+
+.kitchen-sidebar {
+    background-color: var(--kitchen-accent);
+    color: var(--kitchen-text-light);
+}
+
+.kitchen-sidebar-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.kitchen-nav-item {
+    transition: background-color 0.2s;
+}
+
+.kitchen-nav-item:hover {
+    background-color: var(--kitchen-primary);
+}
+
+.kitchen-nav-item.active {
+    background-color: var(--kitchen-secondary);
+}
+
+.kitchen-main-content {
+    background-color: var(--kitchen-background);
+}
+
+/* Kitchen View Styling */
+.kitchen-title {
+    color: var(--kitchen-accent);
+    border-bottom: 2px solid var(--kitchen-secondary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.kitchen-order-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.kitchen-order-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.kitchen-card-header {
+    background-color: var(--kitchen-primary);
+    color: var(--kitchen-text-light);
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+}
+
+.kitchen-card-body {
+    padding: 1.25rem;
+    background-color: white;
+}
+
+.kitchen-special-instructions {
+    background-color: #fff3e0;
+    border-left: 4px solid var(--kitchen-warning);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.kitchen-item-list {
+    margin-bottom: 1.25rem;
+}
+
+.kitchen-item {
+    border: 1px solid var(--kitchen-border);
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kitchen-item-name {
+    font-weight: 600;
+    color: var(--kitchen-text);
+}
+
+.kitchen-item-instructions {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+.kitchen-item-quantity {
+    background-color: var(--kitchen-secondary);
+    color: white;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.kitchen-action-button {
+    background-color: var(--kitchen-success);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.kitchen-action-button:hover {
+    background-color: var(--kitchen-primary);
+}
+
+.kitchen-total {
+    font-weight: 600;
+    color: var(--kitchen-accent);
+}
+
+.kitchen-time {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Empty state styling */
+.kitchen-empty-state {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kitchen-empty-icon {
+    font-size: 3rem;
+    color: var(--kitchen-light);
+    margin-bottom: 1rem;
+}
+
+.kitchen-empty-text {
+    color: #666;
+    font-size: 1.1rem;
+}

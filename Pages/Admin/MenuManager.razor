@@ -1,0 +1,289 @@
+@page "/admin/menu"
+@layout AdminLayout
+@using RestaurantApp.Data.Models
+@using RestaurantApp.Data.Services
+@using Microsoft.AspNetCore.Components.Forms
+@inject IMenuService MenuService
+@inject IFileUploadService FileUploadService
+@inject ILogger<MenuManager> Logger
+@attribute [Authorize(Roles = "Admin")]
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Menu Management</h2>
+        <button class="btn btn-primary" @onclick="ShowAddModal">
+            <i class="bi bi-plus-lg"></i> Add Menu Item
+        </button>
+    </div>
+
+    @if (menuItems == null)
+    {
+        <p>Loading menu items...</p>
+    }
+    else if (!menuItems.Any())
+    {
+        <div class="alert alert-info">
+            No menu items found. Click "Add Menu Item" to create one.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in menuItems)
+                    {
+                        <tr>
+                            <td>
+                                @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                {
+                                    <img src="@item.ImageUrl" alt="@item.Name" style="width: 50px; height: 50px; object-fit: cover;" />
+                                }
+                                else
+                                {
+                                    <span class="text-muted">No image</span>
+                                }
+                            </td>
+                            <td>@item.Name</td>
+                            <td>@item.Category</td>
+                            <td>$@item.Price.ToString("F2")</td>
+                            <td>@item.Description</td>
+                            <td>
+                                <span class="badge @(item.IsAvailable ? "bg-success" : "bg-danger")">
+                                    @(item.IsAvailable ? "Available" : "Unavailable")
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary me-2" @onclick="() => ShowEditModal(item)">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger" @onclick="() => DeleteItem(item)">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+<!-- Add/Edit Modal -->
+@if (showModal)
+{
+    <div class="modal show d-block" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@(editingItem == null ? "Add Menu Item" : "Edit Menu Item")</h5>
+                    <button type="button" class="btn-close" @onclick="CloseModal"></button>
+                </div>
+                <div class="modal-body">
+                    <EditForm Model="@currentItem" OnValidSubmit="@HandleSubmit">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <InputText @bind-Value="currentItem.Name" class="form-control" />
+                            <ValidationMessage For="@(() => currentItem.Name)" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Category</label>
+                            <InputText @bind-Value="currentItem.Category" class="form-control" />
+                            <ValidationMessage For="@(() => currentItem.Category)" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Price</label>
+                            <InputNumber @bind-Value="currentItem.Price" class="form-control" />
+                            <ValidationMessage For="@(() => currentItem.Price)" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <InputTextArea @bind-Value="currentItem.Description" class="form-control" />
+                            <ValidationMessage For="@(() => currentItem.Description)" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Image</label>
+                            <div class="d-flex flex-column">
+                                @if (!string.IsNullOrEmpty(currentItem.ImageUrl))
+                                {
+                                    <div class="mb-2">
+                                        <img src="@currentItem.ImageUrl" alt="Menu item image" style="max-width: 200px; max-height: 200px;" />
+                                    </div>
+                                }
+                                <InputFile OnChange="OnFileChange" class="form-control" accept=".jpg,.jpeg,.png" />
+                                @if (!string.IsNullOrEmpty(uploadMessage))
+                                {
+                                    <div class="@(uploadSuccess ? "text-success" : "text-danger") mt-2">
+                                        @uploadMessage
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <InputCheckbox @bind-Value="currentItem.IsAvailable" class="form-check-input" />
+                                <label class="form-check-label">Available</label>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" @onclick="CloseModal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code {
+    private List<MenuItem> menuItems = new();
+    private bool showModal = false;
+    private MenuItem currentItem = new();
+    private MenuItem editingItem;
+    private IBrowserFile selectedFile;
+    private string uploadMessage = "";
+    private bool uploadSuccess = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadMenuItems();
+    }
+
+    private async Task LoadMenuItems()
+    {
+        try
+        {
+            menuItems = (await MenuService.GetAllMenuItemsAsync()).ToList();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error loading menu items");
+        }
+    }
+
+    private void ShowAddModal()
+    {
+        currentItem = new MenuItem { IsAvailable = true };
+        editingItem = null;
+        showModal = true;
+    }
+
+    private void ShowEditModal(MenuItem item)
+    {
+        currentItem = new MenuItem
+        {
+            Id = item.Id,
+            Name = item.Name,
+            Category = item.Category,
+            Price = item.Price,
+            Description = item.Description,
+            IsAvailable = item.IsAvailable,
+            ImageUrl = item.ImageUrl
+        };
+        editingItem = item;
+        showModal = true;
+    }
+
+    private void CloseModal()
+    {
+        showModal = false;
+        currentItem = new MenuItem();
+        editingItem = null;
+        selectedFile = null;
+        uploadMessage = "";
+        uploadSuccess = false;
+    }
+
+    private async Task OnFileChange(InputFileChangeEventArgs e)
+    {
+        selectedFile = e.File;
+        uploadMessage = $"File selected: {selectedFile.Name}";
+        uploadSuccess = true;
+    }
+
+    private async Task HandleSubmit()
+    {
+        try
+        {
+            // Handle file upload if a file was selected
+            if (selectedFile != null)
+            {
+                // Delete old image if updating and there's an existing image
+                if (editingItem != null && !string.IsNullOrEmpty(editingItem.ImageUrl))
+                {
+                    await FileUploadService.DeleteFileAsync(editingItem.ImageUrl);
+                }
+
+                // Upload the new image
+                string imageUrl = await FileUploadService.UploadFileAsync(selectedFile, "uploads");
+                if (!string.IsNullOrEmpty(imageUrl))
+                {
+                    currentItem.ImageUrl = "/" + imageUrl; // Add leading slash for proper URL formatting
+                }
+                else
+                {
+                    uploadMessage = "Failed to upload image.";
+                    uploadSuccess = false;
+                    return;
+                }
+            }
+
+            if (editingItem == null)
+            {
+                await MenuService.AddMenuItemAsync(currentItem);
+                Logger.LogInformation($"Added new menu item: {currentItem.Name}");
+            }
+            else
+            {
+                await MenuService.UpdateMenuItemAsync(currentItem);
+                Logger.LogInformation($"Updated menu item: {currentItem.Name}");
+            }
+
+            await LoadMenuItems();
+            CloseModal();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, $"Error {(editingItem == null ? "adding" : "updating")} menu item");
+            uploadMessage = $"Error: {ex.Message}";
+            uploadSuccess = false;
+        }
+    }
+
+    private async Task DeleteItem(MenuItem item)
+    {
+        try
+        {
+            if (await MenuService.DeleteMenuItemAsync(item.Id))
+            {
+                menuItems.Remove(item);
+                Logger.LogInformation($"Deleted menu item: {item.Name}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, $"Error deleting menu item: {item.Name}");
+        }
+    }
+}

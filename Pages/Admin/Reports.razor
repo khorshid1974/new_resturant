@@ -1,0 +1,204 @@
+@page "/admin/reports"
+@using Microsoft.AspNetCore.Authorization
+@using new_resturant.Shared
+@using RestaurantApp.Data.Services
+@using RestaurantApp.Data.Models
+@inject ISalesReportService SalesReportService
+@layout AdminLayout
+@attribute [Authorize(Roles = "Admin")]
+
+<div class="reports-container">
+    <h1 class="mb-4">Sales Reports</h1>
+    
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card summary-card">
+                <div class="card-body">
+                    <h5 class="card-title">Today's Summary</h5>
+                    <div class="summary-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Total Orders</span>
+                            <span class="stat-value">@todayOrderCount</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Total Revenue</span>
+                            <span class="stat-value">$@todayRevenue.ToString("N2")</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Orders by Table</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Table</th>
+                                    <th>Orders</th>
+                                    <th>Revenue</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (tableStats == null)
+                                {
+                                    <tr>
+                                        <td colspan="3" class="text-center">Loading...</td>
+                                    </tr>
+                                }
+                                else if (!tableStats.Any())
+                                {
+                                    <tr>
+                                        <td colspan="3" class="text-center">No data available</td>
+                                    </tr>
+                                }
+                                else
+                                {
+                                    @foreach (var stat in tableStats)
+                                    {
+                                        <tr>
+                                            <td>@stat.TableName</td>
+                                            <td>@stat.OrderCount</td>
+                                            <td>$@stat.Revenue.ToString("N2")</td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Popular Menu Items</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Quantity Sold</th>
+                                    <th>Revenue</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (menuItemStats == null)
+                                {
+                                    <tr>
+                                        <td colspan="3" class="text-center">Loading...</td>
+                                    </tr>
+                                }
+                                else if (!menuItemStats.Any())
+                                {
+                                    <tr>
+                                        <td colspan="3" class="text-center">No data available</td>
+                                    </tr>
+                                }
+                                else
+                                {
+                                    @foreach (var stat in menuItemStats)
+                                    {
+                                        <tr>
+                                            <td>@stat.ItemName</td>
+                                            <td>@stat.QuantitySold</td>
+                                            <td>$@stat.Revenue.ToString("N2")</td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .reports-container {
+        padding: 2rem;
+    }
+
+    .summary-card {
+        background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+        color: white;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .summary-stats {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .stat-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .card {
+        border: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-2px);
+    }
+
+    .card-header {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .table th {
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+</style>
+
+@code {
+    private int todayOrderCount;
+    private decimal todayRevenue;
+    private List<TableOrderStat>? tableStats;
+    private List<MenuItemStat>? menuItemStats;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        todayOrderCount = await SalesReportService.GetTodayOrderCountAsync();
+        todayRevenue = await SalesReportService.GetTodayRevenueAsync();
+        tableStats = await SalesReportService.GetOrdersGroupedByTableAsync();
+        menuItemStats = await SalesReportService.GetMostPopularItemsAsync();
+    }
+} 

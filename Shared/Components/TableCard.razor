@@ -1,0 +1,152 @@
+@using RestaurantApp.Data.Models
+
+<div class="table-card @GetTableStatusClass()" @onclick="OnTableClick" style="padding: inherit;">
+    <div class="table-visual">
+        <!-- SVG Restaurant Table -->
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Table top -->
+            <ellipse cx="50" cy="50" rx="40" ry="25" class="table-top" />
+            
+            <!-- Chairs -->
+            @for (int i = 0; i < Math.Min(Table.Capacity, 8); i++)
+            {
+                var angle = i * (360 / Math.Min(Table.Capacity, 8)) * Math.PI / 180;
+                var chairX = 50 + Math.Sin(angle) * 55;
+                var chairY = 50 + Math.Cos(angle) * 35;
+                <circle cx="@chairX" cy="@chairY" r="8" class="chair" />
+            }
+            
+            <!-- Table number -->
+            <text x="50" y="55" text-anchor="middle" class="table-number-text">@Table.Name</text>
+        </svg>
+    </div>
+    <div class="table-info">
+        <div class="table-number">@Table.Name</div>
+        <div class="table-capacity">Seats: @Table.Capacity</div>
+        <div class="table-status">@GetTableStatusText()</div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Table Table { get; set; }
+
+    [Parameter]
+    public EventCallback<Table> OnTableSelected { get; set; }
+
+    private string GetTableStatusClass() => Table.IsOccupied ? "occupied" : "available";
+
+    private string GetTableStatusText() => Table.IsOccupied ? "Occupied" : "Available";
+
+    private async Task OnTableClick()
+    {
+        await OnTableSelected.InvokeAsync(Table);
+    }
+}
+
+<style>
+    .table-card {
+        border-radius: 12px;
+        padding: 1.5rem;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #f8f9fa;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .table-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .table-card.available {
+        border: 2px solid #4CAF50;
+    }
+
+    .table-card.occupied {
+        border: 2px solid #F44336;
+    }
+
+    .table-visual {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .table-top {
+        fill: #8D6E63;
+        stroke: #5D4037;
+        stroke-width: 2;
+    }
+
+    .chair {
+        fill: #BBDEFB;
+        stroke: #1976D2;
+        stroke-width: 1;
+    }
+
+    .table-number-text {
+        fill: white;
+        font-size: 14px;
+        font-weight: bold;
+        dominant-baseline: middle;
+    }
+
+    .table-info {
+        width: 100%;
+        background-color: white;
+        border-radius: 8px;
+        padding: 0.75rem;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .table-card.available .table-top {
+        fill: #A5D6A7;
+        stroke: #4CAF50;
+    }
+
+    .table-card.occupied .table-top {
+        fill: #EF9A9A;
+        stroke: #F44336;
+    }
+
+    .table-number {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+        color: #333;
+    }
+
+    .table-capacity {
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+        color: #666;
+    }
+
+    .table-status {
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        display: inline-block;
+    }
+
+    .table-card.available .table-status {
+        background-color: #E8F5E9;
+        color: #2E7D32;
+    }
+
+    .table-card.occupied .table-status {
+        background-color: #FFEBEE;
+        color: #C62828;
+    }
+</style>

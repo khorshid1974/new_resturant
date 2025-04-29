@@ -1,0 +1,18 @@
+@page "/logout"
+@using RestaurantApp.Data.Services
+@using RestaurantApp.Data.Models
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.Components.Authorization
+@inject IUserService UserService
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var customAuthProvider = (CustomAuthStateProvider)AuthStateProvider;
+        await customAuthProvider.MarkUserAsLoggedOut();
+        NavigationManager.NavigateTo("/");
+    }
+} 
