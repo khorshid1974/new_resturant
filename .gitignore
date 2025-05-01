@@ -197,3 +197,7 @@ wwwroot/uploads/*
 
 # macOS specific
 .DS_Store
+
+# Ignore build output folders
+bin/
+obj/
